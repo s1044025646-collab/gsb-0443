@@ -1,0 +1,14 @@
+{
+  "name": "subtraction-grundy-service",
+  "version": "1.0.0",
+  "description": "有限减法取石游戏 Grundy 值与必胜着法核验后端（API + CLI）",
+  "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/grundy.test.js",
+    "start": "npm run build && node dist/src/server.js",
+    "cli": "node dist/src/cli.js",
+    "demo": "npm run build && node dist/src/cli.js demo"
+  }
+}
